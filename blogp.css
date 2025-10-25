@@ -38,7 +38,7 @@ img {
     font-weight: 500;
 }
 
-h2 {
+h1 {
     font-weight: 900;
 }
 
@@ -75,27 +75,27 @@ h2 {
 }
 
 @media screen and (min-width: 641px) {
-   .main-body { margin: 5em 9em;
+   .main-body { margin: 5em 7.2em;
 }
 }
 
 @media screen and (min-width: 961px) {
-   .main-body { margin: 5em 17em;
+   .main-body { margin: 5em 16.4em;
 }
 }
 
 @media screen and (min-width: 1025px) {
-   .main-body { margin: 5em 20em;
+   .main-body { margin: 5em 18.4em;
 }
 }
 
 @media screen and (min-width: 1280px) {
-   .main-body { margin: 5em 28em;
+   .main-body { margin: 5em 26.2em;
 }
 }
 
 @media screen and (min-width: 1320px) {
-   .main-body { margin: 5em 35em;
+   .main-body { margin: 5em 33.8em;
 }
 }
 
