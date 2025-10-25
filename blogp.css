@@ -63,3 +63,40 @@ h2 {
     margin-left: 2.5%;
     font-weight: 700;
 }
+
+@media screen and (min-width: 320px) {
+   .main-body { margin: 5em 1em;
+}
+}
+
+@media screen and (min-width: 481px) {
+   .main-body { margin: 5em 4em;
+}
+}
+
+@media screen and (min-width: 641px) {
+   .main-body { margin: 5em 9em;
+}
+}
+
+@media screen and (min-width: 961px) {
+   .main-body { margin: 5em 17em;
+}
+}
+
+@media screen and (min-width: 1025px) {
+   .main-body { margin: 5em 20em;
+}
+}
+
+@media screen and (min-width: 1280px) {
+   .main-body { margin: 5em 28em;
+}
+}
+
+@media screen and (min-width: 1320px) {
+   .main-body { margin: 5em 35em;
+}
+}
+
+
