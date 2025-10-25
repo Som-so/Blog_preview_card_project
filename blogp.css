@@ -12,12 +12,12 @@ body {
 
 .main-body {
     border: 1.5px solid black;
-    border-radius: 12px;
+    border-radius: 0.75em;
     margin: 9% 37%;
     padding: 1.5%;
     background-color: white;
     font-family: "Figtree", sans-serif;
-    box-shadow: 5.5px 5.5px;
+    box-shadow: 0.34375em 0.34375em;
 }
 
 img {
@@ -30,7 +30,7 @@ img {
     display: inline-block;
     margin-top: 4%;
     padding: 1.5%;
-    border-radius: 5px;
+    border-radius: 0.3125em;
     font-weight: bold;
 }
 
