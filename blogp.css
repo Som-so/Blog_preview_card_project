@@ -7,25 +7,31 @@
 }
 
 
-@property --background-colour {
-    syntax: "<color>";
-    inherits: true;
-    initial-value: hsl(47, 88%, 63%);
+:root {
+    --background-colour: hsl(47, 88%, 63%);
 }
 
 
 body {
     background-color: var(--background-colour);
     color: hsl(0, 0%, 7%);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 4rem;
 }
 
 .main-body {
     border: 1.5px solid black;
-    border-radius: 0.75em;
-    padding: 1.5%;
+    border-radius: 0.75rem;
+    padding: 1rem;
     background-color: white;
     font-family: "Figtree", sans-serif;
     box-shadow: 0.34375em 0.34375em;
+    --margin: 3rem;
+    --max-width:30rem;
+    width: min(100% - var(--margin), var(--max-width))
 }
 
 img {
@@ -36,10 +42,12 @@ img {
 .learni {
     background-color: var(--background-colour);
     display: inline-block;
-    margin-block-start: 4%;
-    padding: 1.5%;
+    margin-block-end: 0.5rem;
+    margin-block-start: 0.5rem;
+    padding: 0.3rem;
     border-radius: 0.3125em;
     font-weight: bold;
+    
 }
 
 .publdate {
@@ -47,11 +55,13 @@ img {
 }
 
 h1 {
-    font-weight: 900;
+    font-weight: 800;
+    margin-block-end: 0.5rem;
 }
 
 .textt {
     color: hsl(0, 0%, 42%);
+    margin-block-end: 0.5rem;
 }
 
 .avatarimg {
