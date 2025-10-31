@@ -61,7 +61,7 @@ body {
 }
 
 .main-body {
-    margin: 3rem auto;
+    margin: clamp(2rem, 6.5vh, 3rem) auto;
     border: 0.09rem solid var(--gray-950);
     border-radius: 0.75rem;
     padding: clamp(0.5rem, 2.5vh, 1rem);
@@ -69,7 +69,7 @@ body {
     box-shadow: 0.3rem 0.3rem;
     --margin: 3rem;
     --max-width:30rem;
-    width: min(100% - var(--margin), var(--max-width))
+    width: min(100% - var(--margin), var(--max-width));
 }
 
 img {
@@ -99,7 +99,7 @@ h1 {
 }
 
 .textt {
-    color: hsl(0, 0%, 42%);
+    color: var(--gray-500);
     margin-block-end: clamp(0.2rem, 1vh, 0.5rem);
 }
 
