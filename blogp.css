@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/Figtree-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/Figtree-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/Figtree-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 *,
 *::before,
 *::after {
@@ -8,27 +31,42 @@
 
 
 :root {
-    --background-colour: hsl(47, 88%, 63%);
+    --body-font: 'Figtree', sans-serif;
+    --font-size: 1rem;
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    
 }
 
 
 body {
-    background-color: var(--background-colour);
-    color: hsl(0, 0%, 7%);
+    font-family: var(--body-font);
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+}
+
+.body-container {
+    top: 0;
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--yellow);
+    color: var(--gray-950);
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding-block: 4rem;
+    position: absolute;
 }
 
 .main-body {
-    border: 1.5px solid black;
+    margin: 3rem auto;
+    border: 0.09rem solid var(--gray-950);
     border-radius: 0.75rem;
-    padding: 1rem;
-    background-color: white;
-    font-family: "Figtree", sans-serif;
-    box-shadow: 0.34375em 0.34375em;
+    padding: clamp(0.5rem, 2.5vh, 1rem);
+    background-color: var(--white);
+    box-shadow: 0.3rem 0.3rem;
     --margin: 3rem;
     --max-width:30rem;
     width: min(100% - var(--margin), var(--max-width))
@@ -36,16 +74,17 @@ body {
 
 img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.6rem;
 }
 
+
 .learni {
-    background-color: var(--background-colour);
+    background-color: var(--yellow);
     display: inline-block;
-    margin-block-end: 0.5rem;
-    margin-block-start: 0.5rem;
-    padding: 0.3rem;
-    border-radius: 0.3125em;
+    margin-block-end: clamp(0.2rem, 1vh, 0.5rem);
+    margin-block-start: clamp(0.2rem, 1vh, 0.5rem);
+    padding: clamp(0.2rem, 0.5vh, 0.3rem);
+    border-radius: clamp(0.2rem, 0.5vh, 0.3rem);
     font-weight: bold;
     
 }
@@ -56,31 +95,28 @@ img {
 
 h1 {
     font-weight: 800;
-    margin-block-end: 0.5rem;
+    margin-block-end: clamp(0.2rem, 1vh, 0.5rem);
 }
 
 .textt {
     color: hsl(0, 0%, 42%);
-    margin-block-end: 0.5rem;
+    margin-block-end: clamp(0.2rem, 1vh, 0.5rem);
 }
 
 .avatarimg {
-    width:10%;
-    display: inline-block;
+    margin-inline-end: clamp(0.5rem, 2.5vh, 1rem);
+    width: min(6.5vh, 3rem);
 
 }
 
-.avatarr {
-    position:relative;
+
+.avatarr{
+    display: flex;
+    align-items: center;
+    margin-block-start: clamp(0.5rem, 2.5vh, 1rem);
 }
 
-.avname{
-    display: inline-block;
-    position: absolute;
-    margin-block-start: 2.5%;
-    margin-inline-start: 2.5%;
-    font-weight: 700;
-}
+
 
 
 
